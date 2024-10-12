@@ -82,6 +82,7 @@ class NameBadge(app.App):
         ctx.font = "Arimo Bold"
         ctx.rgb(*self.header_fg_color).move_to(0, -60).text("Hello")
         if self.name is not None and not self.confirm_clear:
+            ctx.font_size = 36
             ctx.rgb(*self.fg_color).move_to(0, 60).text(self.name)
 
         ctx.font_size = 28
